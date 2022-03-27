@@ -13,23 +13,23 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movies</name>
 	<description>Demo project for Spring Boot</description>
-<!--	<properties>-->
-<!--		<java.version>11</java.version>-->
-<!--	</properties>-->
+	<!--	<properties>-->
+	<!--		<java.version>11</java.version>-->
+	<!--	</properties>-->
 	<properties>
-	  <sonar.organization>cleytonsousa</sonar.organization>
-	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.organization>cleytonsousa</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.jacoco</groupId>
-		    <artifactId>jacoco-maven-plugin</artifactId>
-		    <version>0.8.7</version>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.7</version>
 		</dependency>
 
 		<dependency>
@@ -69,25 +69,21 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.7</version>
-				
-				<execution>  
-					    <id>pre-test</id>  
-					    <goals>  
-					      <goal>prepare-agent</goal>  
-					    </goals>  
-					  </execution> 
-					<execution>  
-					  <id>post-test</id>  
-					  <phase>test</phase>  
-					  <goals>  
-						<goal>report</goal>  
-					  </goals>  
-				</execution>  
-				
+
+				<execution>
+					<id>pre-test</id>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+				</execution>
+				<execution>
+					<id>post-test</id>
+					<phase>test</phase>
+					<goals>
+						<goal>report</goal>
+					</goals>
+				</execution>
+
 				<configuration>
 					<excludes>
 						<exclude>

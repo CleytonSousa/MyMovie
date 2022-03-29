@@ -32,6 +32,6 @@ class TesteControllerTest {
    public void testeCall() throws Exception {
         mockMvc.perform(get("/teste"))
                 .andDo(print())
-                .andExpect(status().isOk());
+                .andExpect(status().isNotFound());
    }
 }
